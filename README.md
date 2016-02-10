@@ -15,11 +15,11 @@ token = authenticate(request)
 token = authenticate(request, ['character'])
 
 # By default using the authenticate method directly will raise either a
-# ccpauth.Unauthorized or ccpauth.Forbidden exception if something goes wrong or
+# eveauth.Unauthorized or eveauth.Forbidden exception if something goes wrong or
 # missing a scope.
 
 # Decorate a flask view
-from ccpauth.contrib.flask import authenticate
+from eveauth.contrib.flask import authenticate
 
 @authenticate()
 @app.route('/v1/<int:character_id>/')
@@ -27,7 +27,7 @@ def get_char_stats(character_id):
     if request.token['character_id'] != character_id:
         abort(403)
 
-# The flask decorator will abort with a 401 or 403 if the ccpauth package raises
+# The flask decorator will abort with a 401 or 403 if the eveauth package raises
 # one if its exceptions. You only need to handle making sure the character the
 # token is for is allowed the resource they are requesting.
 ```
