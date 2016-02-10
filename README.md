@@ -37,3 +37,5 @@ def get_char_stats(character_id):
 URL which will be used to validate the authorization token.
 * __EVEAUTH_CACHE_TIME:__ Defaults to 300. How long, in seconds, to cache the
 response from the SSO server for.
+* __AUTH_TESTING:__ 
+* * __TEST_TOKEN_DATA:__ 
