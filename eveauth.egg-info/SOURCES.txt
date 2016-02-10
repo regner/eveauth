@@ -1,9 +1,0 @@
-eveauth/__init__.py
-eveauth/authenticate.py
-eveauth/exceptions.py
-eveauth.egg-info/PKG-INFO
-eveauth.egg-info/SOURCES.txt
-eveauth.egg-info/dependency_links.txt
-eveauth.egg-info/top_level.txt
-eveauth/contrib/__init__.py
-eveauth/contrib/flask.py
