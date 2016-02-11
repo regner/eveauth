@@ -1,4 +1,6 @@
 # eveauth
+[![Travis](https://img.shields.io/travis/Regner/eveauth.svg)](https://travis-ci.org/Regner/eveauth) [![PyPI](https://img.shields.io/pypi/v/eveauth.svg)](https://pypi.python.org/pypi/eveauth/)
+
 A simple library for verifying authorization tokens provided against the EVE
 Online SSO. Helper methods and decorators are provided for simplysimplifying the
 ability to restrict access based on scopes or a character ID.
@@ -38,4 +40,4 @@ URL which will be used to validate the authorization token.
 * __EVEAUTH_CACHE_TIME:__ Defaults to 300. How long, in seconds, to cache the
 response from the SSO server for.
 * __AUTH_TESTING:__ 
-* * __TEST_TOKEN_DATA:__ 
+* __TEST_TOKEN_DATA:__ 
